@@ -26,8 +26,7 @@ public class Calculator {
         // TODO: Implement this method
         int quotient;
         if (a == 0){
-            System.out.println("Division by zero not allowed");
-            return 0;
+            throw new ArithmeticException("Division by zero not allowed.");
         }
         quotient = a/b;
         return quotient;
